@@ -1,0 +1,89 @@
+/*This is a css comment */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: rgb(250,250,250);
+	background-image: url(../images/bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover; /* får bilde til å passe siden */
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.main {
+	background-color: rgba(250,250,250,0.7);
+	border-radius: 50px;
+	max-width: 600px;
+	margin: 0 auto; /* Centres the element */
+	padding: 60px;
+	box-shadow: 0px 0px 100px 80px rgba(244,91,225,0.8); /* horisontal, vertikal, size, blurres */
+}
+
+h1 {
+	font-family: 'Bungee Shade', cursive; /* legger til font jeg har lagt til i html */
+	font-size: 50px;
+	text-align: center;
+	line-height: 1;
+	margin: 0;
+	text-shadow: 10px 10px 10px pink;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 5;
+	font-weight: normal;
+	letter-spacing: 10px; /* Mellomrom mellom bokstaver */
+	text-transform: uppercase;
+	text-shadow: 10px 10px 20px blue;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+h3:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+h3 + * {
+	display: none;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	border: 10px dashed black;
+	border-radius: 30%;
+	padding: 0;
+}
+
+img:hover {
+	transform: rotateZ(360deg);
+	display: block;
+	transition: 1200ms; /* beskriver hvor lang tid bildet skal bruke på å rotere */
+}
+
+p,
+ul,
+ol {
+	line-height: 1.6;
+	list-style: none;
+	padding-left: 0;
+}
+
+a {
+	color: grey;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	transform: rotateZ(360deg);
+	display: inline-block;
+	transition: transform 150ms;
+}
